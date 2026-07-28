@@ -110,7 +110,7 @@ export const projectsData = [
     year: "2024",
     description: "Custom RC marine macroplastic collector made with fully recycled materials to clear floating debris.",
     techStack: ["Arduino", "C++", "Motor Controller"],
-    videoUrl: "/assets/Frog.mov",
+    videoUrl: "/assets/Frog.MOV",
     learned: ["Upcycling Materials", "Physical Mechanism Design", "Waterproof Enclosures"],
     githubUrl: null, // Set to null so GitHub button is automatically hidden!
     liveUrl: "",
