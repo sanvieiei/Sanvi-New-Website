@@ -97,33 +97,33 @@ export default function HeroDesktop({ onOpenFolder }) {
 
       {/* Scattered Mini Folders Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
-  {BACKGROUND_FOLDERS.map((folder) => (
-    <motion.div
-      key={folder.id}
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: isOpening ? 0.2 : 0.85, scale: 1 }}
-      transition={{ duration: 0.5, delay: folder.id * 0.05 }}
-      className="absolute flex flex-col items-center group cursor-pointer pointer-events-auto"
-      style={{
-        top: folder.top,
-        left: folder.left,
-        right: folder.right,
-        bottom: folder.bottom,
-        transform: `rotate(${folder.rotate}deg)`,
-      }}
-      whileHover={{ scale: 1.1, rotate: 0 }}
-    >
-      <img
-        src={folder.src}
-        alt={folder.label}
-        className="w-14 sm:w-20 md:w-24 h-auto drop-shadow-sm object-contain"
-      />
-      <span className="mt-4 text-sm font-medium text-[#7a5c54] tracking-wide font-sans pointer-events-none">
-        {folder.label}
-      </span>
-    </motion.div>
-  ))}
-</div>
+        {BACKGROUND_FOLDERS.map((folder) => (
+          <motion.div
+            key={folder.id}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: isOpening ? 0.2 : 0.85, scale: 1 }}
+            transition={{ duration: 0.5, delay: folder.id * 0.05 }}
+            className="absolute flex flex-col items-center group cursor-pointer pointer-events-auto"
+            style={{
+              top: folder.top,
+              left: folder.left,
+              right: folder.right,
+              bottom: folder.bottom,
+              transform: `rotate(${folder.rotate}deg)`,
+            }}
+            whileHover={{ scale: 1.1, rotate: 0 }}
+          >
+            <img
+              src={folder.src}
+              alt={folder.label}
+              className="w-14 sm:w-20 md:w-24 h-auto drop-shadow-sm object-contain"
+            />
+            <span className="mt-4 text-sm font-medium text-[#7a5c54] tracking-wide font-sans pointer-events-none">
+              {folder.label}
+            </span>
+          </motion.div>
+        ))}
+      </div>
 
       {/* Top Categorical Desktop Header Labels */}
       <motion.div
@@ -140,21 +140,21 @@ export default function HeroDesktop({ onOpenFolder }) {
       <div className="relative w-full flex-1 flex flex-col items-center justify-center z-20">
 
         {/* Text Overlay */}
-<motion.div
-  animate={{ opacity: isOpening ? 0 : 1, y: isOpening ? -20 : 0 }}
-  transition={{ duration: 0.3 }}
-  className="relative z-20 text-center pointer-events-none"
->
-  {/* Name on top */}
-  <span className="block font-pinyon text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-pink-400 font-normal italic tracking-wide mb-[-25px] sm:mb-[-40px] z-10 relative">
-    sanvi takyar's
-  </span>
+        <motion.div
+          animate={{ opacity: isOpening ? 0 : 1, y: isOpening ? -20 : 0 }}
+          transition={{ duration: 0.3 }}
+          className="relative z-20 text-center pointer-events-none"
+        >
+          {/* Name on top */}
+          <span className="block font-pinyon text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-pink-400 font-normal italic tracking-wide mb-[-25px] sm:mb-[-40px] z-10 relative">
+            sanvi takyar's
+          </span>
 
-  {/* PORTFOLIO underneath */}
-  <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-[#3d2723] uppercase leading-none drop-shadow-sm">
-    portfolio
-  </h1>
-</motion.div>
+          {/* PORTFOLIO underneath */}
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-[#3d2723] uppercase leading-none drop-shadow-sm">
+            portfolio
+          </h1>
+        </motion.div>
 
         {/* Main Center Folder */}
         <motion.div
@@ -172,7 +172,7 @@ export default function HeroDesktop({ onOpenFolder }) {
         >
           <div className="relative w-[240px] sm:w-[320px] md:w-[400px] lg:w-[450px] aspect-[4/3] flex items-center justify-center">
             <img
-              src="public\assets\mac-folder.png"
+              src="\assets\mac-folder.png"
               alt="Portfolio Folder - Click to Open"
               className="w-full h-full object-contain mix-blend-multiply transition-all duration-200"
               style={{ filter: isOpening ? 'brightness(1.05)' : undefined }}
