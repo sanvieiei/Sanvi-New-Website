@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f8f4ee;
+    color: #3a2725;
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+    touch-action: manipulation;
+  }
+}
+
+/* Plain light Mac desktop background - soft off-white/cream */
+.bg-mac-desktop {
+  background-color: #f8f4ee;
+}
+
+/* Flat Scrapbook & Mac Glass Cards - No gradients */
+.mac-card {
+  background: #ffffff;
+  border: 1px solid #e8dec8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.mac-window {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2d7c5;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom scrollbar hide for clean step-based layout */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
